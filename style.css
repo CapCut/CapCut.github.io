@@ -1,0 +1,259 @@
+/*Aquí empiezan los estios de la etiqueta header*/
+body{
+    background: rgba(10, 23, 96, 0.88);
+    padding: 25px 0;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+}
+
+.navegacion{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    margin: 20px;
+}
+
+h1{
+    text-align: center; 
+    color: white;
+    border: solid;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+    width: auto;
+}
+
+/*Aqui empiezan los estilos de la etiqueta main*/
+.t1{
+    margin: 40px;
+    padding: 10px;
+}
+
+.area-texto, .area-2{
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.t2{
+    margin: 20px;
+    padding: 10px;
+}
+
+.conjunto1{
+    margin: 10px;
+    padding: 10px;
+}
+
+.encriptar{
+    width: 10%;
+    margin: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 6px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.desencriptar{
+    width: 10%;
+    margin: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 6px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.copiar{
+    width: 10%;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 6px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.guardar{
+    width: 10%;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 6px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.copiar:hover{
+    background: rgb(26, 247, 55);
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.guardar:hover{
+    background: rgb(129, 26, 247);
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.encriptar:hover{
+    background: rgb(240, 26, 247);
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.desencriptar:hover{
+    background: rgb(247, 96, 26);
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+#pos1{
+    position: relative;
+    left: 70px;
+    bottom: 50px;;
+}
+
+#pos2{
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+}
+
+#pos3{
+    position: relative;
+    left: 220px;
+    bottom: 50px;
+}
+
+#pos4{
+    position: relative;
+    left: 220px;
+    bottom: 50px;
+}
+
+/*Aquí empiezan los estilos del pie de la pagina*/
+.ultima, .pie{
+    margin: 20px;
+}
+
+.logos{
+    width:30px;
+    height:30px;
+    margin-left: 10px;
+    margin: none;
+    padding: none;
+}
+
+.creditos{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.derechos{
+    width: 10%;
+    height: 10%;
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+
+/*Temas de ayuda*/
+.contenedor{
+    margin: 40px;
+    padding: 20px;  
+}
+
+.manual{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    left: 35%;
+    border: 3px solid red;
+    transition: 400ms all;
+}
+
+.manual:hover{
+    background: rgb(64, 230, 13);
+}
+
+/*Aquí empieza la responsividad*/
+/* Estilos para telefonos */
+@media screen and (max-width: 480px){
+    .area-2,.area-texto,.encriptar,.desencriptar,.copiar,.guardar,.derechos,img{
+        width: auto;
+        height: auto;
+    }
+
+    #pos1,#pos2,#pos3,#pos4,.derechos,.navegacion{
+        position: static;
+    }
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para pantallas con ancho mínimo de 481px y máximo de 768px */
+    .area-2,.area-texto,.encriptar,.desencriptar,.copiar,.guardar,.derechos,img{
+        width: auto;
+        height: auto;
+    }
+
+    #pos1,#pos2,#pos3,#pos4,.derechos,.navegacion{
+        position: static;
+    }
+  }

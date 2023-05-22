@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <title>Encriptador | Texto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <img src="/Imagenes/Logo_Principal.png" alt="Logo del Encripatador de Textos">
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="index.html">Encriptador</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+            <h1>ENCRIPTADOR TXT</h1>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <section class="t1">
+            <div id="compnentes">
+                <textarea class="area-texto" placeholder="Ingrese un texto sin caracteres numericos." id="recibir_texto"></textarea>
+                <textarea class="area-2" id="resultado_texto" readonly></textarea>
+            </div>
+        </section>
+        <section class="t2">
+            <div class="conjunto1">
+                <input class="encriptar" id="pos1" type="button" value="Encriptar" onclick="encriptar()">
+                <input class="desencriptar" id="pos2" type="button" value="Desencriptar" onclick="des_encriptar()">
+                <input class="copiar" id="pos3" type="button" value="Copiar" onclick="copiar_texto()">
+                <input class="guardar" id="pos4" type="button" value="Guardar (txt)" onclick="guardar_archivo()">
+            </div>
+        </section>
+        <hr> 
+    </main>
+    <footer>
+       <section class="ultima">
+            <div class="pie">
+                <img class="derechos" id="mi_logo" src="/Imagenes/Logo.png" alt="Logo del Copyright">
+                <p class="creditos">&copy; 2023 Todos los derechos reservados por Méndez Rafael | Oracle AluraLatam 
+                    <a href="https://www.linkedin.com/in/7s-kiyotaka-0bb239257/"><img class="logos" src="/Imagenes/linkedin.png" alt="Logo Linkedin"></a>
+                    <a href="https://github.com/CapCut"><img class="logos" src="/Imagenes/GITHUB.png" alt="Logo Github"></a>
+                    <a href="https://www.instagram.com/mendezlivarluis/"><img class="logos" src="/Imagenes/icons8-instagram-48.png" alt="Logo Instagram"></a>
+                    <a href="https://discord.com/channels/@me/999137690333220874"><img class="logos" src="/Imagenes/icons8-logotipo-de-la-discordia-30.png" alt="Logo Discord"></a>
+                </p>
+            </div>
+       </section>
+    </footer>
+
+    <script src="/BackEnd/main.js"></script>
+</body>
+</html>
